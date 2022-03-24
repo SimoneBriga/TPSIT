@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COMPITO</title> 
+<style>
+
+
+div{
+ margin:2px;
+ padding:2px;
+ width: 200px;
+ height: 200px;
+position:relative;
+display: flex;
+float: left;
+}
+.rosso{
+    background-color: red;
+}
+.giallo{
+    background-color: yellow;
+}
+.blue{
+    background-color: darkblue;
+}
+.verde{
+    background-color:darkgreen;
+}
+.box11{
+  background-color: pink;
+}
+.box22{
+  background-color: orange;
+}
+.box33{
+  background-color: brown;
+}
+.box44{
+  background-color: purple;
+}
+</style>
+
+</head>
+<body>
+
+<div id="box1" class="rosso">
+
+    <button  onclick="cambiacolore()"   class="box11">cambia colore</button>
+
+</div>
+<div id="box2" class="verde">
+
+   <button  onclick="cambiacolore()"   class="box22">cambia colore</button>
+</div>
+<div id="box3" class="blue">
+
+   <button  onclick="cambiacolore()"   class="box33">cambia colore</button>
+</div>
+<div id="box4" class="giallo">
+
+   <button  onclick="cambiacolore()"   class="box44">cambia colore</button>
+</div>
+
+
+<script>
+   
+function cambiacolore() {
+    document.getElementById("box2")
+}
+
+
+</script>    
+
+   
+
+</body>
+</html>
