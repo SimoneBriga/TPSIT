@@ -1,0 +1,108 @@
+<SCRIPT Language='JavaScript'>
+function muovi2() {
+   var b=document.getElementById('B');
+      x=parseInt(b.offsetLeft);
+      x=x+100;
+      y=parseInt(b.offsetTop);
+      y=y+19;
+      b.style.right=x;
+      b.style.top=y;
+}
+</SCRIPT>
+ 
+ 
+<HTML>
+   <HEAD>
+   <TITLE>COMPITO</TITLE>
+   </HEAD>
+ 
+   <style type="text/css">
+     
+      #B
+      {
+        right:50px;
+         top:50px;
+         height:50px;
+         background-color:blue;
+         color:black;
+         position:absolute;
+         height:100px;
+         width:100px;
+         text-align:center;
+         font-size:20px;
+         border-width:1px;
+         border:solid black;
+      }
+ 
+   </style>
+ 
+<SCRIPT Language='JavaScript'>
+    function muovi() {
+       var b=document.getElementById('J');
+          x=parseInt(b.offsetLeft);
+          x=x+50;
+          y=parseInt(b.offsetTop);
+          y=y+1000;
+          b.style.left=x;
+          b.style.right=y;
+    }
+    </SCRIPT>
+   
+   
+<style type="text/css">
+     
+    #J
+    {
+       left:50px;
+       top:50px;
+       height:50px;
+       background-color:yellow;
+       color:black;
+       position:absolute;
+       height:100px;
+       width:100px;
+       text-align:center;
+       font-size:20px;
+       border-width:1px;
+       border:solid black;
+    }
+ 
+ </style>
+ 
+ 
+    <BODY>
+ 
+    <DIV id='B'></DIV>
+   
+    <SCRIPT Language='JavaScript'>
+       var counter = 1000;
+       var myFunction = function(){
+          if(counter>0)
+          {
+             muovi2();
+             clearInterval(interval);
+             counter = counter - 100;
+             interval = setInterval(myFunction, counter);
+          }
+       }
+       var interval = setInterval(myFunction, counter);    
+   </SCRIPT>
+ 
+<DIV id='J'></DIV>
+   
+<SCRIPT Language='JavaScript'>
+   var counter = 1000;
+   var myFunction = function(){
+      if(counter>0)
+      {
+         muovi();
+         clearInterval(interval);
+         counter = counter - 100;
+         interval = setInterval(myFunction, counter);
+      }
+   }
+   var interval = setInterval(myFunction, counter);    
+</SCRIPT>
+   </BODY>
+ 
+</HTML>
