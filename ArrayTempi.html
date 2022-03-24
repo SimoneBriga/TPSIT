@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COMPITO</title>
+</head>
+<body>
+<button onclick="tempo()">CLICCAMI PIU' VELOCE CHE PUOI</button>
+<p id="out"></p>
+  
+<script>
+       let mioarraytempi=[];
+
+ let tempoiniziale=Date.now();
+
+function tempo() {
+  
+    let tempodalclick=Date.now()-tempoiniziale;
+  
+mioarraytempi.push(tempodalclick);
+  
+stampaArray();
+}
+function stampaArray() {
+    document.getElementById("out").innerHTML=mioarraytempi.toString();
+}
+
+    </script>
+
+
+se il primo elemento dell'array è sotto i 2000 ms stampare un div con background di colore rosso
+
+
+altrimenti
+verde
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
