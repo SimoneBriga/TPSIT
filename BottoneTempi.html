@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Document</title>
+
+  </head>
+  <body>
+
+    <h2>GIOCO BASATO SUL TEMPO</h2>
+
+    <p id="demo">
+
+     PREMI IL BOTTONE E TI DIRO' QUANTO TEMPO CI HAI MESSO PER PREMERLO 
+    </p>
+
+    <p id="out">........0.0</p>
+    <button type="button" onclick="count()">PREMI</button>
+    <script>
+      
+      let i = 0;
+      let start = Date.now();
+      function count() {
+        document.getElementById("out").innerHTML =
+          "Done in " + (Date.now() - start) + " ms";
+      }
+    </script>
+  </body>
+</html>
