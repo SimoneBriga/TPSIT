@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+<title>COMPITO</title>
+
+    </head>
+    <body>
+        <h1>NUMERI COMPRESI TRA 1 E 100</h1>
+        <button onclick="GenreraPrimi();"> TROVALI </button>
+        <script>
+            function GenreraPrimi(){
+                
+            for(let i=1;i<=100;i++){
+                if(isPrime(i)){
+                        document.write("<span>"+i + " * </span>");
+                    }else{
+                        document.write("<span>"+i + " </span>");
+                    }
+                }
+            }
+function isPrime(N){
+primo=true;
+for(let Fattore=2;(Fattore<N/2 &&primo ) ;Fattore++){
+if(N%Fattore==0){
+Primo=false;
+ }
+} return primo;
+            }
+</script>
+</body>
+
+</html>
+
+</head>
+<body>
+    
+</body>
+</html>
